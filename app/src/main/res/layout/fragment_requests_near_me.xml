@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.wequest.wequest.mainFragments.RequestsNearMeFragment">
+
+
+        <include
+            android:id="@+id/seekbar_layout"
+            layout="@layout/seekbar_layout" />
+
+        <ListView
+
+            android:id="@+id/requesters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/no_request_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="No requests currently availabe."
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+</layout>

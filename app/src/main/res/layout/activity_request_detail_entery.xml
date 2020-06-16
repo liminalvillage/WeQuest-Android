@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+        android:id="@+id/vertical_stepper_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#c8e6c9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_card"
+        app:cardCornerRadius="12dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="32dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/request_summary"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+
+
+    <!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.example.wequest.wequest.basicActivities.RequestDetailEntryActivity">
+
+
+        <TextView
+            android:id="@+id/detail_about_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="6dp"
+            android:text="Please specify the required hours and information of your need."
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/hour_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hour credit"
+                android:inputType="numberDecimal"
+                android:textColor="@color/primary_light"
+                android:textColorHint="@color/com_facebook_button_send_background_color" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/request_msg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Request information"
+                android:inputType="textLongMessage"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/com_facebook_button_send_background_color" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/exp_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date(optional):"
+                android:textSize="16sp" />
+
+
+            <TextView
+
+                android:id="@+id/exp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/exp_hint"
+                android:text="Not set"
+                android:textColor="@color/color_error"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/time_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exp_tv"
+                android:layout_alignStart="@+id/exp_tv"
+                android:layout_alignLeft="@+id/exp_tv"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawableLeft="@drawable/time"
+                android:text="Pick"
+
+
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/make_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@color/colorPrimary"
+            android:scrollHorizontally="false"
+            android:text="Request"
+            android:textColor="#f1f1f1"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</ScrollView>
+    <-->

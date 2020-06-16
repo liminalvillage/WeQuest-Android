@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#ccd4e0" />
+        </shape>
+    </item>
+
+    <item android:id="@+id/process_drawable">
+        <clip>
+            <shape>
+                <solid android:color="#6dd451" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

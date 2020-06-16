@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#FFE0E0E0"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/request_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Pizza"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/requester_location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/map"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.wequest.wequest.mainFragments.MyNeedRequestFragment">
+
+
+        <LinearLayout
+            android:id="@+id/no_request_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/dino" />
+
+            <TextView
+                android:text="@string/you_have_no_requests"
+                android:id="@+id/hint_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:text="Your Reuqests will appear here"
+                android:id="@+id/hint_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+        <include
+            android:id="@+id/my_request_listview"
+            layout="@layout/request_status_list"/>
+
+
+    </FrameLayout>
+</layout>

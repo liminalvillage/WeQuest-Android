@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_chat_item_pic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+             android:src="@drawable/user_profile" />
+
+
+        <TextView
+            android:id="@+id/user_chat_item_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_chat_item_pic"
+            android:layout_marginTop="16dp"
+            android:text="How ar you ding ? fine right?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_chat_item_pic"
+            android:layout_marginLeft="8dp"
+            android:text="Mohammed"
+            android:textColor="@color/primary_text" />
+    </RelativeLayout>
+</layout>

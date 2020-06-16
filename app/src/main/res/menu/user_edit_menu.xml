@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_info"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:orderInCategory="10"
+        android:title="@string/edit_user_info"
+        balloonberry:showAsAction="always" />
+    <item
+        android:id="@+id/edit_done"
+        android:orderInCategory="10"
+        android:title="Done"
+        android:visible="false"
+        balloonberry:showAsAction="ifRoom" />
+</menu>

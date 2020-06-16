@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#43a047</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="colorAccent">#4E9258</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#4E9258</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="lightGreen">#81C784</color>
+
+
+    <color name="grayLight">#d3d3d3</color>
+    <color name="BlueLight">#4dd0e1</color>
+    <color name="darkBlue">#315174</color>
+    <color name="darkPink">#a73548</color>
+    <color name="darkYellow">#c7912c</color>
+    <color name="lightYellow">#c0d0d9</color>
+    <color name="lightPurple">#746191</color>
+    <color name="darkGray">#424242</color>
+    <color name="transparentColor">#cccccc</color>
+
+    <color name="refresh1">#008000</color>
+    <color name="refresh2">#008080</color>
+    <color name="refresh3">#800080</color>
+    <color name="refresh4">#e912de</color>
+
+
+
+
+        <string-array name="list_color">
+            <item>#006064</item>
+            <item>#424242</item>
+            <item>#6d4c41</item>
+            <item>#f44336</item>
+            <item>#ff6e40</item>
+            <item>#ffa726</item>
+            <item>#304ffe</item>
+            <item>#4db6ac</item>
+            <item>#4caf50</item>
+        </string-array>
+
+    <color name="testcolor0">#90CAF9</color>
+    <color name="Red">#f5da2d2d</color>
+    <color name="yellowishGreen">#FBA1C148</color>
+    <color name="black">#000000</color>
+    <color name="very_light_green">#ba6ab4a9</color>
+    <color name="white">#ffffff</color>
+
+
+</resources>

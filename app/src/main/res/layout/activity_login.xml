@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.wequest.wequest.basicActivities.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/google_login"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/wequest_logo" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_above="@id/facebook_login"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp" />
+
+
+
+</RelativeLayout>

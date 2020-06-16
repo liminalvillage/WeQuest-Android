@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.wequest.wequest.basicActivities.RequestDetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/materialize_baseline_grid_x4"
+                android:layout_marginLeft="@dimen/materialize_baseline_grid_x2"
+                android:layout_marginRight="@dimen/materialize_baseline_grid_x2"
+                android:layout_marginTop="@dimen/materialize_baseline_grid_x2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_radius_shape"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_pic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/user_profile" />
+
+                        <TextView
+                            android:id="@+id/requester_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="users_name" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:clipToPadding="false"
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.appcompat.widget.AppCompatRatingBar
+                                android:id="@+id/reputation"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:progressTint="#fff" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/request_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="serif"
+                        android:text="Pizza Pasta"
+                        android:textSize="22sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/materialize_baseline_grid"
+                android:clipToPadding="false"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/materialize_baseline_grid_x2"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/materialize_baseline_grid_small"
+                        android:layout_marginLeft="@dimen/materialize_baseline_grid"
+                        android:fontFamily="serif"
+                        android:text="Request Message:"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/request_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border_three_corners_shape_reverse"
+                        android:padding="10dp"
+                        android:text="@string/request_msg"
+                        android:textColor="#030303" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/materialize_baseline_grid_small"
+                            android:layout_marginLeft="@dimen/materialize_baseline_grid"
+                            android:fontFamily="serif"
+                            android:text="Request Price:"
+                            android:textColor="@color/primary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_three_corners_shape"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:id="@+id/request_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/materialize_baseline_grid_x2"
+                                android:text="5 hour credit"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/request_karma"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/materialize_baseline_grid_x2"
+                                android:text="10 karma"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/materialize_baseline_grid_x2"
+                            android:clipToPadding="false"
+                            app:cardBackgroundColor="@color/primary"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="1dp">
+
+                            <TextView
+                                android:id="@+id/accept_this"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/materialize_baseline_grid"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="Reject This Request?"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="18sp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/yes"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/materialize_baseline_grid_x2"
+                            android:clipToPadding="false"
+                            android:visibility="gone"
+                            app:cardCornerRadius="27dp"
+                            app:cardElevation="22dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/ticked" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/no"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/materialize_baseline_grid_x2"
+                            android:clipToPadding="false"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="22dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cancel" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</layout>
+

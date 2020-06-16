@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">WeQuest</string>
+    <string name="title_request">Request</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_subscribe">Subscribe</string>
+    <!--<string name="web_default_client_id">957366749040-9mcac0b7vutprog446ldoct9sr18mfm6.apps.googleusercontent.com</string>-->
+
+    <string name="title_activity_supplier_see_requester_maps">Need Request</string>
+    <!-- Facebook login id -->
+
+
+    <string name="facebook_app_id">1793486024063943</string>
+    <string name="fb_login_protocol_scheme">fb1793486024063943</string>
+
+
+    <string name="title_activity_maps">Choosing Request Location</string>
+
+    <string name="info">Info</string>
+    <string name="message">message</string>
+    <string name="favorite">favorite</string>
+    <string name="remove">remove</string>
+    <string name="uncheck">uncheck</string>
+    <string name="check">check</string>
+    <string name="title_activity_check_supplier_maps">Map</string>
+    <string name="username">UserName</string>
+
+
+    <string name="request_msg">Hello, I am trying to move North to continue my profession as IT worker . I need help with English and would like to request 2 hours of lessons with you for now . maybe more in the future . please let me know when you are available . thank you ! .ahmed</string>
+
+
+    <string name="you_have_no_requests">You have no requests</string>
+    <string name="make_request">Request what you need</string>
+    <string name="no_internet_connections_found">No internet connections found.</string>
+    <string name="whoops">Whoops!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_messages">.</string>
+    <string name="credit_for_supplier">%1$s hour credit and %2$s karma for %3$s</string>
+    <string name="request_title">%1$s - %2$s</string>
+    <string name="edit_user_info">Edit User Info</string>
+    <string name="bio_max_count">%1$d / %2$d</string>
+    <string name="hour_hint">Leave blank if this request is\n not measurable in human hours</string>
+    <string name="about_wequest">WeQuest is a Decentralized Application designed to help people connect with each other, to exchange goods and to provide services without the need for money. Neighboring providers will be able to fulfill the requests, in return of time credits, karma and reputation points for the quality provided. They can then use these credits to request services from others.</string>
+    <string name="no_bio">User Doesn\'t Set The his/her Bio Yet</string>
+    <string name="suppliers_found">Found %1$d suppliers</string>
+    <string name="title">Title</string>
+    <string name="describtion">Description</string>
+    <string name="hours_need">How Many Hours You Need?</string>
+    <string name="karmas_giving">Amount of karma you can give?</string>
+    <string name="opt_exp">Optional Expiration Date</string>
+    <string name="request_summary">Requested %1$s for %2$s hour and %3$s karma on %4$s</string>
+    <string name="hour_detail">Hours : %1$s</string>
+    <string name="request_entry">New Request</string>
+    <string name="requests_found">Requests Found : %1$d</string>
+    <string name="unknown_time">Unknown</string>
+    <string name="needs_fragment_title">What Do You Need?</string>
+    <string name="near_request_fragment_title">Requests Near Me</string>
+    <string name="request_status_fragment_title">Request Status</string>
+    <string name="me_fragment_title">Me</string>
+    <string name="missed_notification_fragment_title">Missed Notifications</string>
+    <string name="about_fragment_title">About</string>
+    <string name="request_a_futue_fragment_title">Request a feature</string>
+    <string name="scan_fragment_title">Scan QR-Code</string>
+    <string name="signout_fragment_title">Sign Out</string>
+    <string name="primary_section_title">Your WeQuest!</string>
+    <string name="comm_section_title">Communication</string>
+    <string name="supplier_details_title">Supplier Details</string>
+    <string name="status_ongoing">Status : Ongoing</string>
+    <string name="status_not_start">Status : Waiting for suppliers</string>
+    <string name="status_finish">Status : Completed</string>
+    <string name="status_expired">Status : Expired</string>
+    <string name="karma_transfered">%1$d Karma</string>
+    <string name="hour_transfered">%1$f Hour credit</string>
+    <string name="add_request_tooltip">Do you Need Something?</string>
+    <string name="add_request_tooltip_secondary">Tape here to add your first need Request to the list!</string>
+    <string name="need_sub_tooltip">Can you help people with this need?</string>
+    <string name="need_sub_tooltip_secondary">Tape here to get notified for nearby request</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.wequest.wequest.basicActivities.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Select your need"
+        app:titleTextColor="@color/colorWhite"
+        android:id="@+id/toolbar_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+         android:theme="@style/StartTheme"
+        />
+
+    <FrameLayout
+
+        android:layout_below="@+id/toolbar_drawer"
+        android:id="@+id/fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="56dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:onClick="requestNewNeed"-->
+        <!--app:srcCompat="@drawable/ic_email_black_24dp"-->
+        <!--app:fabSize="normal"-->
+        <!--tools:ignore="RelativeOverlap"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>
+

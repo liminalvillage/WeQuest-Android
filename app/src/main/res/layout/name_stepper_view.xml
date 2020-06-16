@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+
+        android:id="@+id/exp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Not set"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/time_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_access_time_black_24dp"
+        android:drawableLeft="@drawable/time"
+        android:text="Pick"
+
+
+        android:textSize="12sp" />
+
+</LinearLayout>

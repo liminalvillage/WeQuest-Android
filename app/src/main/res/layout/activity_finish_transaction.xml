@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Complete the transaction"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/qrCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+
+             />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="After the Transaction:"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/karma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karma" />
+
+            <TextView
+
+                android:id="@+id/time_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="will be transfered"
+                android:textColor="@color/primary_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

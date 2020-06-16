@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.wequest.wequest.basicActivities.ChooseSupplierActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <include
+                android:id="@+id/confirmation_section"
+                layout="@layout/confirmation_credit_layout_section" />
+
+            <TextView
+
+                android:id="@+id/chat_with"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="0dp"
+                android:background="@color/primary_dark"
+                android:gravity="center"
+                android:text="Conversation"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include
+                android:id="@+id/chat_layout"
+                layout="@layout/chat_layout_design"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/send_message_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp"
+                android:layout_weight="0"
+                android:isScrollContainer="true"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clipToPadding="false"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="4dp">
+
+                    <EditText
+                        android:id="@+id/messageED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/materialize_baseline_grid"
+                        android:hint="type your message here"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageButton
+                    android:id="@+id/send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/ic_send_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

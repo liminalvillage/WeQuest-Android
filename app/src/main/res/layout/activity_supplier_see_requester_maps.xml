@@ -1,0 +1,77 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:layout_anchorGravity="center_horizontal"
+    sothree:layout_collapseMode="parallax"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <include layout="@layout/seekbar_layout" />
+
+        </RelativeLayout>
+
+    </fragment>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@color/primary"
+            android:elevation="10dp"
+            android:gravity="center|bottom">
+
+
+            <TextView
+                android:id="@+id/requests_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginRight="4dp"
+                android:text="Requests Found : 0"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/requesters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp" />
+
+
+        <TextView
+            android:id="@+id/no_request_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="No requests currently availabe."
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

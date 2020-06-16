@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/supplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="UserName"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxLength="70"
+            android:text="back in syrai, i was an english teacher at the damascus university"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/choose"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_chat"
+        android:focusable="false"
+        android:scaleType="centerCrop" />
+</LinearLayout>

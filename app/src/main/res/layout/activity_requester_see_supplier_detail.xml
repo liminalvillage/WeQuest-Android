@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details about the request\n and the supplier" />
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requester_name"
+        android:text="hhhhhfffffffff"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/details"/>
+
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/request_name"
+        android:text="hhhhhfffffffff"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/requester_name"/>
+
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requester_rep"
+        android:text="hhhhhfffffffff"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/request_name"/>
+    <Button
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:padding="6dp"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:onClick="goback"
+        android:text=" Go back" />
+</RelativeLayout>
+
+</LinearLayout>
+
